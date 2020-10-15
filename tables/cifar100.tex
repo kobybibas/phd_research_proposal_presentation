@@ -1,0 +1,37 @@
+\begin{tabular}{ccccccccc}
+\toprule
+\multirow{2}{*}{$\begin{array}{c}\hbox{\bf Unknowns} \\\end{array}$}&
+\multirow{2}{*}{\bf Algorithm} & 
+\multirow{2}{*}{ $\begin{array}{c}\hbox{\bf AUC}\end{array}$} &
+\multicolumn{5}{c}{\bf CCR at FPR of} \\
+& & & {$0.1$} & {$0.2$} &  {$0.6$} & {$0.8$} & {$1.0$}
+\\ 
+\hline
+\multirow{6}{*}{LSUN} &         
+    Max-prob           &  0.62 &  0.33 &  0.50 &  0.73 &  0.77 &  0.79 \\
+&   ODIN               &  0.60 &  0.27 &  0.44 &  0.72 &  0.77 &  0.79 \\
+&   Entropic Open-Set  &  0.61 &  0.40 &  0.51 &  0.69 &  0.74 &  0.76 \\
+&   Objectosphere      &  0.59 &  0.33 &  0.46 &  0.69 &  0.73 &  0.75 \\
+&   Cosine Similarity  &  0.59 &  0.37 &  0.51 &  0.69 &  0.73 &  0.76 \\
+&   Max. Discrepancy        &  0.57 &  0.32 &  0.47 &  0.65 &  0.69 &  0.76 \\
+&   Ours               &  \textbf{0.74} &  \textbf{0.67} &  \textbf{0.71} &  \textbf{0.77} &  \textbf{0.78} &  \textbf{0.79} \\
+\cline{1-8}
+\multirow{6}{*}{SVHN} &         
+    Max-prob           &  0.73 &  0.63 &  0.69 &  0.77 &  0.78 &  0.79 \\
+&   ODIN               &  0.73 &  0.66 &  0.71 &  0.76 &  0.78 &  0.79 \\
+&   Entropic Open-Set  &  0.68 &  0.56 &  0.62 &  0.73 &  0.75 &  0.76 \\
+&   Objectosphere      &  0.67 &  0.53 &  0.62 &  0.73 &  0.75 &  0.75 \\
+&   Cosine Similarity  &  0.65 &  0.52 &  0.60 &  0.71 &  0.73 &  0.75 \\
+&   Max. Discrepancy        &  0.66 &  0.51 &  0.60 &  0.72 &  0.74 &  0.76 \\
+&   Ours               &  \textbf{0.75} &  \textbf{0.70} &  \textbf{0.73} &  \textbf{0.77} &  \textbf{0.78} &  \textbf{0.79} \\
+\cline{1-8}
+\multirow{6}{*}{Noise}& 
+    Max-prob           &  0.61 &  0.52 &  0.55 &  0.63 &  0.66 &  0.79 \\
+&   ODIN               &  0.66 &  0.58 &  0.62 &  0.68 &  0.72 &  0.79 \\
+&   Entropic Open-Set  &  0.66 &  0.61 &  0.63 &  0.66 &  0.69 &  0.76 \\
+&   Objectosphere      &  0.51 &  0.33 &  0.41 &  0.56 &  0.65 &  0.75 \\
+&   Cosine Similarity  &  0.34 &  0.00 &  0.00 &  0.43 &  0.47 &  0.75 \\
+&   Max. Discrepancy        &  0.36 &  0.28 &  0.30 &  0.38 &  0.41 &  0.76 \\
+&   Ours               &  \textbf{0.76} &  \textbf{0.73} &  \textbf{0.74} &  \textbf{0.76} &  \textbf{0.78} &  \textbf{0.79} \\
+\bottomrule
+\end{tabular}

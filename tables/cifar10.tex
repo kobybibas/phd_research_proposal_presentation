@@ -1,0 +1,41 @@
+\newcommand{\SCS}{\cite{techapanurak2019hyperparameterfree,wang2018cosface}}
+
+\begin{tabular}{cccccccc}
+\toprule
+\multirow{2}{*}{$\begin{array}{c}\hbox{\bf Unknowns} \\\end{array}$}&
+\multirow{2}{*}{\bf Algorithm} & 
+\multirow{2}{*}{ $\begin{array}{c}\hbox{\bf AUC}\end{array}$} &
+\multicolumn{5}{c}{\bf CCR at FPR of} \\
+& & & {$0.1$} & {$0.2$} &  {$0.6$} & {$0.8$} & {$1.0$}
+\\ 
+\hline
+\multirow{6}{*}{LSUN}  &          
+    Max-prob~\cite{hendrycks17baseline}           &  0.82 &  0.44 &  0.73 &  0.94 &  0.95 &  0.96 \\
+&   ODIN~\cite{liang2017enhancing}               &  0.71 &  0.26 &  0.42 &  0.91 &  0.95 &  0.96 \\
+&   Entropic Open-Set~\cite{dhamija2018reducing}  &  0.83 &  0.67 &  0.80 &  0.91 &  0.93 &  0.94 \\
+&   Objectosphere~\cite{dhamija2018reducing}      &  0.66 &  0.04 &  0.14 &  0.93 &  0.94 &  0.95 \\
+&   Cosine Similarity~\SCS  &  0.82 &  0.67 &  0.78 &  0.92 &  0.93 &  0.94 \\
+&   Max. Discrepancy~\cite{yu2019unsupervised}        &  0.83 &  0.67 &  0.76 &  0.89 &  0.92 &  0.95 \\
+&   Ours               &  \textbf{0.94} &  \textbf{0.92} &  \textbf{0.93} &  \textbf{0.95} &  \textbf{0.95} &  \textbf{0.96} \\
+\cline{1-8}
+\multirow{6}{*}{SVHN} &         
+    Max-prob~\cite{hendrycks17baseline}           &  0.83 &  0.56 &  0.76 &  0.93 &  0.95 &  0.96 \\
+&   ODIN~\cite{liang2017enhancing}               &  0.74 &  0.41 &  0.56 &  0.89 &  0.95 &  0.96 \\
+&   Entropic Open-Set~\cite{dhamija2018reducing}  &  0.88 &  0.79 &  0.86 &  0.92 &  0.93 &  0.94 \\
+&   Objectosphere~\cite{dhamija2018reducing}      &  0.65 &  0.06 &  0.19 &  0.92 &  0.94 &  0.95 \\
+&   Cosine Similarity~\SCS  &  0.92 &  0.88 &  0.91 &  0.94 &  0.94 &  0.95 \\
+&   Max. Discrepancy~\cite{yu2019unsupervised}        &  0.90 &  0.84 &  0.86 &  0.92 &  0.92 &  0.94 \\
+&   Ours               &  \textbf{0.94} &  \textbf{0.93} &  \textbf{0.94} &  \textbf{0.95} &  \textbf{0.95} &  \textbf{0.96} \\
+\cline{1-8}
+\multirow{6}{*}{Noise}& 
+    Max-prob~\cite{hendrycks17baseline}           &  0.15 &  0.07 &  0.09 &  0.16 &  0.20 &  0.96 \\
+&   ODIN~\cite{liang2017enhancing}               &  0.48 &  0.32 &  0.36 &  0.51 &  0.60 &  0.96 \\
+&   Entropic Open-Set~\cite{dhamija2018reducing}  &  0.93 &  0.92 &  0.92 &  0.93 &  0.94 &  0.94 \\
+&   Objectosphere~\cite{dhamija2018reducing}      &  0.27 &  0.02 &  0.03 &  0.16 &  0.64 &  0.95 \\
+&   Cosine Similarity~\SCS  &  0.93 &  0.93 &  0.93 &  0.94 &  0.94 &  0.95 \\
+&   Max. Discrepancy~\cite{yu2019unsupervised}        &  0.86 &  0.83 &  0.84 &  0.86 &  0.88 &  0.94 \\
+&   Ours               &  \textbf{0.95} &  \textbf{0.94} & \textbf{0.95} &  \textbf{0.95} &  \textbf{0.96} &  \textbf{0.96} \\
+\bottomrule
+\end{tabular}
+
+
